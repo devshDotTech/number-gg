@@ -11,31 +11,6 @@ const welcomeMessage = () => {
   );
 };
 
-//const inp = (query)  => {
-//  return new Promise((resolve)=> {
-//    r1.question(query, resolve);
-//  })
-//}
-//
-//const guessNumber = async (answer, attempts) => {
-//  console.log("start");
-//  let len = attempts;
-//  while(len--){
-//    let guess = await inp('Enter your guess: ');
-//    guess = number(guess);
-//    console.log("guess is", guess);
-//    if (guess === answer){
-//      console.log(`Hurray.... You won in ${attempts - len} attempts`);
-//      r1.close();
-//      return;
-//    }
-//    else{
-//      if (guess > answer) console.log(`oops..your guess is incorrectly, the answer is less than ${guess}, attempts left: ${len}`);
-//      else console.log(`opps..your guess is incorrect, the answer is greater than ${guess}, attempts left: ${len}`);
-//    }
-//  }
-//}
-//
 const inp = (query) => {
   return new Promise((resolve) => {
     r1.question(query, resolve);
